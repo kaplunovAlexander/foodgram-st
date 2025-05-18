@@ -1,0 +1,231 @@
+[
+  {
+    "model": "users.user",
+    "pk": 1,
+    "fields": {
+      "username": "john_doe",
+      "first_name": "John",
+      "last_name": "Doe",
+      "email": "john@example.com",
+      "password": "pbkdf2_sha256$216000$demo$demo",
+      "is_active": true
+    }
+  },
+  {
+    "model": "users.user",
+    "pk": 2,
+    "fields": {
+      "username": "jane_smith",
+      "first_name": "Jane",
+      "last_name": "Smith",
+      "email": "jane@example.com",
+      "password": "pbkdf2_sha256$216000$demo$demo",
+      "is_active": true
+    }
+  },
+  {
+    "model": "users.user",
+    "pk": 3,
+    "fields": {
+      "username": "chef_max",
+      "first_name": "Max",
+      "last_name": "Cook",
+      "email": "max@example.com",
+      "password": "pbkdf2_sha256$216000$demo$demo",
+      "is_active": true
+    }
+  },
+
+  {
+    "model": "recipes.ingredient",
+    "pk": 101,
+    "fields": {
+      "name": "Мука",
+      "measurement_unit": "г"
+    }
+  },
+  {
+    "model": "recipes.ingredient",
+    "pk": 102,
+    "fields": {
+      "name": "Яйцо",
+      "measurement_unit": "шт"
+    }
+  },
+  {
+    "model": "recipes.ingredient",
+    "pk": 103,
+    "fields": {
+      "name": "Молоко",
+      "measurement_unit": "мл"
+    }
+  },
+  {
+    "model": "recipes.ingredient",
+    "pk": 104,
+    "fields": {
+      "name": "Сахар",
+      "measurement_unit": "г"
+    }
+  },
+  {
+    "model": "recipes.ingredient",
+    "pk": 105,
+    "fields": {
+      "name": "Соль",
+      "measurement_unit": "г"
+    }
+  },
+
+  {
+    "model": "recipes.recipe",
+    "pk": 1,
+    "fields": {
+      "name": "Блины",
+      "text": "Вкусные блины на молоке",
+      "pub_date": "2025-01-01T09:00:00Z",
+      "image": "recipes/images/bliny.jpg",
+      "author": 1,
+      "cooking_time": 20
+    }
+  },
+  {
+    "model": "recipes.recipe",
+    "pk": 2,
+    "fields": {
+      "name": "Омлет",
+      "text": "Пышный омлет с молоком",
+      "pub_date": "2025-02-15T10:30:00Z",
+      "image": "recipes/images/omlet.jpg",
+      "author": 2,
+      "cooking_time": 10
+    }
+  },
+  {
+    "model": "recipes.recipe",
+    "pk": 3,
+    "fields": {
+      "name": "Кекс",
+      "text": "Домашний кекс с сахаром",
+      "pub_date": "2025-03-20T08:00:00Z",
+      "image": "recipes/images/keks.jpg",
+      "author": 3,
+      "cooking_time": 45
+    }
+  },
+
+  {
+    "model": "recipes.recipeingredient",
+    "pk": 1,
+    "fields": {
+      "recipe": 1,
+      "ingredient": 101,
+      "amount": 250
+    }
+  },
+  {
+    "model": "recipes.recipeingredient",
+    "pk": 2,
+    "fields": {
+      "recipe": 1,
+      "ingredient": 102,
+      "amount": 2
+    }
+  },
+  {
+    "model": "recipes.recipeingredient",
+    "pk": 3,
+    "fields": {
+      "recipe": 1,
+      "ingredient": 103,
+      "amount": 400
+    }
+  },
+  {
+    "model": "recipes.recipeingredient",
+    "pk": 4,
+    "fields": {
+      "recipe": 2,
+      "ingredient": 102,
+      "amount": 3
+    }
+  },
+  {
+    "model": "recipes.recipeingredient",
+    "pk": 5,
+    "fields": {
+      "recipe": 2,
+      "ingredient": 103,
+      "amount": 100
+    }
+  },
+  {
+    "model": "recipes.recipeingredient",
+    "pk": 6,
+    "fields": {
+      "recipe": 3,
+      "ingredient": 101,
+      "amount": 300
+    }
+  },
+  {
+    "model": "recipes.recipeingredient",
+    "pk": 7,
+    "fields": {
+      "recipe": 3,
+      "ingredient": 104,
+      "amount": 100
+    }
+  },
+  {
+    "model": "recipes.recipeingredient",
+    "pk": 8,
+    "fields": {
+      "recipe": 3,
+      "ingredient": 105,
+      "amount": 5
+    }
+  },
+
+  {
+    "model": "recipes.favorite",
+    "pk": 1,
+    "fields": {
+      "user": 1,
+      "recipe": 3
+    }
+  },
+  {
+    "model": "recipes.favorite",
+    "pk": 2,
+    "fields": {
+      "user": 2,
+      "recipe": 1
+    }
+  },
+
+  {
+    "model": "recipes.shoppingcart",
+    "pk": 1,
+    "fields": {
+      "user": 1,
+      "recipe": 1
+    }
+  },
+  {
+    "model": "recipes.shoppingcart",
+    "pk": 2,
+    "fields": {
+      "user": 2,
+      "recipe": 2
+    }
+  },
+  {
+    "model": "recipes.shoppingcart",
+    "pk": 3,
+    "fields": {
+      "user": 3,
+      "recipe": 1
+    }
+  }
+]

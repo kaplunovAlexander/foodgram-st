@@ -1,0 +1,37 @@
+# Django и основные зависимости
+Django==3.2.16
+djangorestframework==3.12.4
+djoser==2.1.0
+djangorestframework-simplejwt==4.7.2
+
+# Работа с PostgreSQL
+psycopg2-binary==2.9.3
+
+# Работа с изображениями
+Pillow==9.3.0
+
+# Цвета и YAML
+webcolors==1.11.1
+PyYAML==6.0
+
+# Gunicorn и переменные окружения
+gunicorn==20.1.0
+python-dotenv==1.0.1
+
+# Тестирование
+pytest==6.2.4
+pytest-django==4.4.0
+pytest-pythonpath==0.7.3
+
+# Дополнительные зависимости Django
+asgiref==3.8.1
+pytz==2025.2
+sqlparse==0.5.3
+typing_extensions==4.13.2
+tzdata==2025.2
+
+# HTTP-запросы
+requests==2.26.0
+
+# CORS для API
+django-cors-headers==3.13.0
