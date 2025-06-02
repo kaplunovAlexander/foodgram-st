@@ -113,6 +113,66 @@
       "cooking_time": 45
     }
   },
+  {
+    "model": "recipes.recipe",
+    "pk": 4,
+    "fields": {
+      "name": "Картофельное пюре",
+      "text": "Нежное пюре с маслом",
+      "pub_date": "2025-04-01T09:00:00Z",
+      "image": "recipes/images/puree.jpg",
+      "author": 1,
+      "cooking_time": 30
+    }
+  },
+  {
+    "model": "recipes.recipe",
+    "pk": 5,
+    "fields": {
+      "name": "Куриный суп",
+      "text": "Классический куриный суп с овощами",
+      "pub_date": "2025-04-02T10:00:00Z",
+      "image": "recipes/images/soup.jpg",
+      "author": 2,
+      "cooking_time": 40
+    }
+  },
+  {
+    "model": "recipes.recipe",
+    "pk": 6,
+    "fields": {
+      "name": "Сэндвич с сыром",
+      "text": "Простой сэндвич с расплавленным сыром",
+      "pub_date": "2025-04-03T11:00:00Z",
+      "image": "recipes/images/sandwich.jpg",
+      "author": 3,
+      "cooking_time": 5
+    }
+  },
+  {
+    "model": "recipes.recipe",
+    "pk": 7,
+    "fields": {
+      "name": "Салат свежий",
+      "text": "Свежий овощной салат",
+      "pub_date": "2025-04-04T08:00:00Z",
+      "image": "recipes/images/salad.jpg",
+      "author": 1,
+      "cooking_time": 10
+    }
+  },
+  {
+    "model": "recipes.recipe",
+    "pk": 8,
+    "fields": {
+      "name": "Макароны с сыром",
+      "text": "Простой рецепт макарон с сыром",
+      "pub_date": "2025-04-05T09:00:00Z",
+      "image": "recipes/images/macncheese.jpg",
+      "author": 2,
+      "cooking_time": 15
+    }
+  },
 
   {
     "model": "recipes.recipeingredient",
@@ -227,5 +287,139 @@
       "user": 3,
       "recipe": 1
     }
+  },
+  {
+    "model": "recipes.ingredient",
+    "pk": 106,
+    "fields": {
+      "name": "Картофель",
+      "measurement_unit": "г"
+    }
+  },
+  {
+    "model": "recipes.ingredient",
+    "pk": 107,
+    "fields": {
+      "name": "Морковь",
+      "measurement_unit": "г"
+    }
+  },
+  {
+    "model": "recipes.ingredient",
+    "pk": 108,
+    "fields": {
+      "name": "Лук",
+      "measurement_unit": "г"
+    }
+  },
+  {
+    "model": "recipes.ingredient",
+    "pk": 109,
+    "fields": {
+      "name": "Курица",
+      "measurement_unit": "г"
+    }
+  },
+  {
+    "model": "recipes.ingredient",
+    "pk": 110,
+    "fields": {
+      "name": "Сливочное масло",
+      "measurement_unit": "г"
+    }
+  },
+  {
+    "model": "recipes.ingredient",
+    "pk": 111,
+    "fields": {
+      "name": "Сыр",
+      "measurement_unit": "г"
+    }
+  },
+  {
+    "model": "recipes.ingredient",
+    "pk": 112,
+    "fields": {
+      "name": "Хлеб",
+      "measurement_unit": "ломтик"
+    }
+  },
+  {
+    "model": "recipes.ingredient",
+    "pk": 113,
+    "fields": {
+      "name": "Томат",
+      "measurement_unit": "шт"
+    }
+  },
+  {
+    "model": "recipes.ingredient",
+    "pk": 114,
+    "fields": {
+      "name": "Огурец",
+      "measurement_unit": "шт"
+    }
+  },
+  {
+    "model": "recipes.ingredient",
+    "pk": 115,
+    "fields": {
+      "name": "Макароны",
+      "measurement_unit": "г"
+    }
+  },
+
+  {
+    "model": "recipes.recipeingredient", "pk": 9, "fields": {"recipe": 4, "ingredient": 106, "amount": 500}
+  },
+  {
+    "model": "recipes.recipeingredient", "pk": 10, "fields": {"recipe": 4, "ingredient": 110, "amount": 50}
+  },
+  {
+    "model": "recipes.recipeingredient", "pk": 11, "fields": {"recipe": 5, "ingredient": 109, "amount": 300}
+  },
+  {
+    "model": "recipes.recipeingredient", "pk": 12, "fields": {"recipe": 5, "ingredient": 107, "amount": 100}
+  },
+  {
+    "model": "recipes.recipeingredient", "pk": 13, "fields": {"recipe": 5, "ingredient": 108, "amount": 50}
+  },
+  {
+    "model": "recipes.recipeingredient", "pk": 14, "fields": {"recipe": 6, "ingredient": 112, "amount": 2}
+  },
+  {
+    "model": "recipes.recipeingredient", "pk": 15, "fields": {"recipe": 6, "ingredient": 111, "amount": 100}
+  },
+  {
+    "model": "recipes.recipeingredient", "pk": 16, "fields": {"recipe": 7, "ingredient": 113, "amount": 1}
+  },
+  {
+    "model": "recipes.recipeingredient", "pk": 17, "fields": {"recipe": 7, "ingredient": 114, "amount": 1}
+  },
+  {
+    "model": "recipes.recipeingredient", "pk": 18, "fields": {"recipe": 7, "ingredient": 105, "amount": 2}
+  },
+  {
+    "model": "recipes.recipeingredient", "pk": 19, "fields": {"recipe": 8, "ingredient": 115, "amount": 250}
+  },
+  {
+    "model": "recipes.recipeingredient", "pk": 20, "fields": {"recipe": 8, "ingredient": 111, "amount": 150}
+  },
+
+  {
+    "model": "recipes.favorite", "pk": 3, "fields": {"user": 3, "recipe": 6}
+  },
+  {
+    "model": "recipes.favorite", "pk": 4, "fields": {"user": 1, "recipe": 5}
+  },
+
+  {
+    "model": "recipes.shoppingcart", "pk": 4, "fields": {"user": 1, "recipe": 4}
+  },
+  {
+    "model": "recipes.shoppingcart", "pk": 5, "fields": {"user": 2, "recipe": 6}
+  },
+  {
+    "model": "recipes.shoppingcart", "pk": 6, "fields": {"user": 3, "recipe": 5}
   }
 ]

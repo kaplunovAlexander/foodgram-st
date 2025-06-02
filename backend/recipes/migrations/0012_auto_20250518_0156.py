@@ -6,18 +6,23 @@ from django.db import migrations, models
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('recipes', '0011_recipe_pub_date'),
+        ("recipes", "0011_recipe_pub_date"),
     ]
 
     operations = [
         migrations.AlterField(
-            model_name='recipe',
-            name='cooking_time',
-            field=models.PositiveIntegerField(help_text='Укажите время в минутах', verbose_name='Время приготовления (мин)'),
+            model_name="recipe",
+            name="cooking_time",
+            field=models.PositiveIntegerField(
+                help_text="Укажите время в минутах",
+                verbose_name="Время приготовления (мин)",
+            ),
         ),
         migrations.AlterField(
-            model_name='recipeingredient',
-            name='amount',
-            field=models.PositiveIntegerField(help_text='Укажите количество ингредиента', verbose_name='Количество'),
+            model_name="recipeingredient",
+            name="amount",
+            field=models.PositiveIntegerField(
+                help_text="Укажите количество ингредиента", verbose_name="Количество"
+            ),
         ),
     ]

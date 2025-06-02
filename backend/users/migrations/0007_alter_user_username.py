@@ -7,13 +7,23 @@ from django.db import migrations, models
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('users', '0006_auto_20250514_0408'),
+        ("users", "0006_auto_20250514_0408"),
     ]
 
     operations = [
         migrations.AlterField(
-            model_name='user',
-            name='username',
-            field=models.CharField(max_length=150, unique=True, validators=[django.core.validators.RegexValidator(message='Имя пользователя может содержать только латинские буквы, цифры, дефис, подчёркивание и точку', regex='^[a-zA-Z0-9._-]+$')], verbose_name='Имя пользователя'),
+            model_name="user",
+            name="username",
+            field=models.CharField(
+                max_length=150,
+                unique=True,
+                validators=[
+                    django.core.validators.RegexValidator(
+                        message="Имя пользователя может содержать только латинские буквы, цифры, дефис, подчёркивание и точку",
+                        regex="^[a-zA-Z0-9._-]+$",
+                    )
+                ],
+                verbose_name="Имя пользователя",
+            ),
         ),
     ]

@@ -1,37 +1,70 @@
-# Django и основные зависимости
+asgiref==3.8.1
+atomicwrites==1.4.1
+attrs==25.3.0
+black==25.1.0
+certifi==2025.4.26
+cffi==1.17.1
+cfgv==3.4.0
+charset-normalizer==2.0.12
+click==8.2.1
+colorama==0.4.6
+coreapi==2.3.3
+coreschema==0.0.4
+cryptography==44.0.3
+defusedxml==0.8.0rc2
+distlib==0.3.9
 Django==3.2.16
+django-cors-headers==3.13.0
+django-templated-mail==1.1.1
 djangorestframework==3.12.4
-djoser==2.1.0
 djangorestframework-simplejwt==4.7.2
-
-# Работа с PostgreSQL
-psycopg2-binary==2.9.3
-
-# Работа с изображениями
-Pillow==9.3.0
-
-# Цвета и YAML
-webcolors==1.11.1
-PyYAML==6.0
-
-# Gunicorn и переменные окружения
+djoser==2.1.0
+drf-extra-fields==3.7.0
+filelock==3.18.0
+filetype==1.2.0
+flake8==7.2.0
 gunicorn==20.1.0
-python-dotenv==1.0.1
-
-# Тестирование
+identify==2.6.12
+idna==3.10
+iniconfig==2.1.0
+isort==6.0.1
+itypes==1.2.0
+Jinja2==3.1.6
+MarkupSafe==3.0.2
+mccabe==0.7.0
+mypy_extensions==1.1.0
+nodeenv==1.9.1
+oauthlib==3.2.2
+packaging==25.0
+pathspec==0.12.1
+Pillow==9.3.0
+platformdirs==4.3.8
+pluggy==1.0.0.dev0
+pre_commit==4.2.0
+psycopg2-binary==2.9.3
+py==1.11.0
+pycodestyle==2.13.0
+pycparser==2.22
+pyflakes==3.3.2
+PyJWT==2.1.0
 pytest==6.2.4
 pytest-django==4.4.0
 pytest-pythonpath==0.7.3
-
-# Дополнительные зависимости Django
-asgiref==3.8.1
+python-dotenv==1.0.1
+python3-openid==3.2.0
 pytz==2025.2
+PyYAML==6.0
+requests==2.26.0
+requests-oauthlib==2.0.0
+six==1.17.0
+social-auth-app-django==4.0.0
+social-auth-core==4.4.2
 sqlparse==0.5.3
+toml==0.10.2
+tomli==2.2.1
 typing_extensions==4.13.2
 tzdata==2025.2
-
-# HTTP-запросы
-requests==2.26.0
-
-# CORS для API
-django-cors-headers==3.13.0
+uritemplate==4.1.1
+urllib3==1.26.20
+virtualenv==20.31.2
+webcolors==1.11.1

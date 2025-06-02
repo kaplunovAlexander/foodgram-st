@@ -7,28 +7,65 @@ from django.db import migrations, models
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('users', '0005_auto_20250513_0300'),
+        ("users", "0005_auto_20250513_0300"),
     ]
 
     operations = [
         migrations.AlterField(
-            model_name='user',
-            name='email',
-            field=models.EmailField(max_length=254, unique=True, validators=[django.core.validators.EmailValidator(message='Введите корректный адрес электронной почты.')], verbose_name='Электронная почта'),
+            model_name="user",
+            name="email",
+            field=models.EmailField(
+                max_length=254,
+                unique=True,
+                validators=[
+                    django.core.validators.EmailValidator(
+                        message="Введите корректный адрес электронной почты."
+                    )
+                ],
+                verbose_name="Электронная почта",
+            ),
         ),
         migrations.AlterField(
-            model_name='user',
-            name='first_name',
-            field=models.CharField(max_length=150, validators=[django.core.validators.RegexValidator(message='Поле может содержать только буквы, пробел и дефис', regex='^[А-Яа-яA-Za-z\\- ]+$')], verbose_name='Имя'),
+            model_name="user",
+            name="first_name",
+            field=models.CharField(
+                max_length=150,
+                validators=[
+                    django.core.validators.RegexValidator(
+                        message="Поле может содержать только буквы, пробел и дефис",
+                        regex="^[А-Яа-яA-Za-z\\- ]+$",
+                    )
+                ],
+                verbose_name="Имя",
+            ),
         ),
         migrations.AlterField(
-            model_name='user',
-            name='last_name',
-            field=models.CharField(max_length=150, validators=[django.core.validators.RegexValidator(message='Поле может содержать только буквы, пробел и дефис', regex='^[А-Яа-яA-Za-z\\- ]+$')], verbose_name='Фамилия'),
+            model_name="user",
+            name="last_name",
+            field=models.CharField(
+                max_length=150,
+                validators=[
+                    django.core.validators.RegexValidator(
+                        message="Поле может содержать только буквы, пробел и дефис",
+                        regex="^[А-Яа-яA-Za-z\\- ]+$",
+                    )
+                ],
+                verbose_name="Фамилия",
+            ),
         ),
         migrations.AlterField(
-            model_name='user',
-            name='username',
-            field=models.CharField(max_length=150, unique=True, validators=[django.core.validators.RegexValidator(message='Имя пользователя может содержать только латинские буквы, цифры, дефис и подчёркивание', regex='^[a-zA-Z0-9_-]+$')], verbose_name='Имя пользователя'),
+            model_name="user",
+            name="username",
+            field=models.CharField(
+                max_length=150,
+                unique=True,
+                validators=[
+                    django.core.validators.RegexValidator(
+                        message="Имя пользователя может содержать только латинские буквы, цифры, дефис и подчёркивание",
+                        regex="^[a-zA-Z0-9_-]+$",
+                    )
+                ],
+                verbose_name="Имя пользователя",
+            ),
         ),
     ]

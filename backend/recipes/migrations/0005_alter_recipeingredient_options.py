@@ -6,12 +6,15 @@ from django.db import migrations
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('recipes', '0004_rename_ingredient_recipe_ingredients'),
+        ("recipes", "0004_rename_ingredient_recipe_ingredients"),
     ]
 
     operations = [
         migrations.AlterModelOptions(
-            name='recipeingredient',
-            options={'verbose_name': 'ингредиент в рецепте', 'verbose_name_plural': 'Ингредиенты в рецептах'},
+            name="recipeingredient",
+            options={
+                "verbose_name": "ингредиент в рецепте",
+                "verbose_name_plural": "Ингредиенты в рецептах",
+            },
         ),
     ]

@@ -7,33 +7,74 @@ from django.db import migrations, models
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('users', '0003_user'),
+        ("users", "0003_user"),
     ]
 
     operations = [
         migrations.AlterField(
-            model_name='user',
-            name='email',
-            field=models.EmailField(help_text='Введите действительный адрес электронной почты', max_length=254, unique=True, validators=[django.core.validators.EmailValidator(message='Введите корректный адрес электронной почты.')], verbose_name='Электронная почта'),
+            model_name="user",
+            name="email",
+            field=models.EmailField(
+                help_text="Введите действительный адрес электронной почты",
+                max_length=254,
+                unique=True,
+                validators=[
+                    django.core.validators.EmailValidator(
+                        message="Введите корректный адрес электронной почты."
+                    )
+                ],
+                verbose_name="Электронная почта",
+            ),
         ),
         migrations.AlterField(
-            model_name='user',
-            name='first_name',
-            field=models.CharField(help_text='Введите ваше имя (только буквы)', max_length=150, validators=[django.core.validators.RegexValidator(message='Поле может содержать только буквы, пробел и дефис', regex='^[А-Яа-яA-Za-z\\- ]+$')], verbose_name='Имя'),
+            model_name="user",
+            name="first_name",
+            field=models.CharField(
+                help_text="Введите ваше имя (только буквы)",
+                max_length=150,
+                validators=[
+                    django.core.validators.RegexValidator(
+                        message="Поле может содержать только буквы, пробел и дефис",
+                        regex="^[А-Яа-яA-Za-z\\- ]+$",
+                    )
+                ],
+                verbose_name="Имя",
+            ),
         ),
         migrations.AlterField(
-            model_name='user',
-            name='last_name',
-            field=models.CharField(help_text='Введите вашу фамилию (только буквы)', max_length=150, validators=[django.core.validators.RegexValidator(message='Поле может содержать только буквы, пробел и дефис', regex='^[А-Яа-яA-Za-z\\- ]+$')], verbose_name='Фамилия'),
+            model_name="user",
+            name="last_name",
+            field=models.CharField(
+                help_text="Введите вашу фамилию (только буквы)",
+                max_length=150,
+                validators=[
+                    django.core.validators.RegexValidator(
+                        message="Поле может содержать только буквы, пробел и дефис",
+                        regex="^[А-Яа-яA-Za-z\\- ]+$",
+                    )
+                ],
+                verbose_name="Фамилия",
+            ),
         ),
         migrations.AlterField(
-            model_name='user',
-            name='password',
-            field=models.CharField(max_length=128, verbose_name='password'),
+            model_name="user",
+            name="password",
+            field=models.CharField(max_length=128, verbose_name="password"),
         ),
         migrations.AlterField(
-            model_name='user',
-            name='username',
-            field=models.CharField(help_text='Введите уникальное имя пользователя (только латиница, цифры, дефис, подчёркивание)', max_length=150, unique=True, validators=[django.core.validators.RegexValidator(message='Имя пользователя может содержать только латинские буквы, цифры, дефис и подчёркивание', regex='^[a-zA-Z0-9_-]+$')], verbose_name='Имя пользователя'),
+            model_name="user",
+            name="username",
+            field=models.CharField(
+                help_text="Введите уникальное имя пользователя (только латиница, цифры, дефис, подчёркивание)",
+                max_length=150,
+                unique=True,
+                validators=[
+                    django.core.validators.RegexValidator(
+                        message="Имя пользователя может содержать только латинские буквы, цифры, дефис и подчёркивание",
+                        regex="^[a-zA-Z0-9_-]+$",
+                    )
+                ],
+                verbose_name="Имя пользователя",
+            ),
         ),
     ]
