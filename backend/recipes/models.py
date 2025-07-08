@@ -4,6 +4,7 @@ from django.db.models import UniqueConstraint
 
 from backend.const import (INGREDIENT_NAME_MAX_LENGTH,
                            MEASUREMENT_UNIT_MAX_LENGTH, RECIPE_NAME_MAX_LENGTH)
+from .validators import validate_cooking_time
 
 User = get_user_model()
 
@@ -67,6 +68,7 @@ class Recipe(models.Model):
     cooking_time = models.PositiveIntegerField(
         verbose_name="Время приготовления (в минутах)",
         help_text="Введите время приготовления в минутах",
+        validators=[validate_cooking_time],
     )
 
     class Meta:
